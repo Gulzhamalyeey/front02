@@ -16,4 +16,33 @@ const block = document.querySelectorAll('.block')
 //console.log(block)
 
 const button = document.getElementById('button');
-const input = document.getElementById('input')
+const input = document.getElementById('input');
+
+function createNewDiv() {
+    const div = document.createElement('div')
+    const deleteButton = document.createElement('button')
+    deleteButton.innerText = "Delete"
+    deleteButton.onclick = (e) => {
+        e.path[1].remove()
+        console.log(e)
+    }
+
+    div.setAttribute('class', 'block')
+    div.innerText = input.value
+
+    div.append(deleteButton)
+    document.body.append(div)
+    
+}
+
+button.onclick = createNewDiv()
+/*button.onclick = (event) => {
+    console.log(event)
+    console.log("Clicked")
+}*/
+
+/*input.onchange = (event) => {
+    console.log(event)
+    console.log(event.target)
+    console.log(event.target.value)
+}*/
