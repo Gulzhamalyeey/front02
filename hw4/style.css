@@ -1,0 +1,56 @@
+body {
+    background-color: lightcyan;
+    font-family: cursive, "Comic Sans MS" ;
+    box-sizing: border-box;
+}
+
+.counter {
+    margin: 0 auto ;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: magenta;
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    border: 1px solid white;
+}
+
+span {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: black;
+    font-size: 80px;
+    line-height: 300px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.score {
+    height: 150px;
+    width: 100px;
+    margin: 0 auto;
+}
+#reset {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: magenta;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    border: none;
+}
